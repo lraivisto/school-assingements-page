@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTS - Tehtävä 15</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="skriptit.js"></script>
+</head>
+
+<body>
+    <div class="naviy">
+        <a href="/s2001051/ohjelmointi/#">Luka Raivisto (HP)</a>
+        <a href="/s2001051/ohjelmointi/teht">Tehtäviä</a>
+        <a href="/s2001051/ohjelmointi/luvut">Luvut-ohjelma</a>
+        <a href="/s2001051/ohjelmointi/robotto">Robotto-ohjelma</a>
+        <a href="/s2001051/ohjelmointi/ventti">Ventti-ohjelma</a>
+        <a href="#">Yhteystiedot</a>
+    </div>
+    <div id="bannehj">
+        <div class="container">
+            <h1>Tehtävä 15:</h1>
+            <br>
+            <h1>Osa 1:</h1>
+            <button onclick="osa1()">Kokeile</button>
+            <br>
+            <br>
+            <h1>Osa 2:</h1>
+            <label for="maakoodi">Syötä maakoodi:</label>
+            <form action="mp.php">
+                <input type="text" id="maakoodi" name="maakoodi" pattern="[A-Za-z]{3}" placeholder="tähän">
+                <input type="submit" value="Lähetä">
+            </form>
+            <br>
+            <br>
+            <h1>Osa 3:</h1>
+                <label for="sähköposti">Anna sähköpostisi:</label><br>
+                <input type="text" id="osote" name="sposti" value="" placeholder="tähän"><br>
+                <input type="button" value="Lähetä" id="lähetä" onclick="osa3()">
+            <p id="joo"></p>
+            <p id="ei"></p>
+        </div>
+</body>
+
+</html>

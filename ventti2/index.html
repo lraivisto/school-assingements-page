@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta nimi="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventti (DOM)</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="naviy">
+    <a href="/s2001051/ohjelmointi/#">Luka Raivisto (HP)</a>
+    <a href="/s2001051/ohjelmointi/teht">Tehtäviä</a>
+    <a href="/s2001051/ohjelmointi/luvut">Luvut-ohjelma</a>
+    <a href="/s2001051/ohjelmointi/robotto">Robotto-ohjelma</a>
+    <a href="/s2001051/ohjelmointi/ventti">Ventti-ohjelma</a>
+    <a href="#">Ventti-ohjelma DOM remake</a>
+    <a href="dom">DOM-ohjelmointi</a>
+    <a href="#">Yhteystiedot</a>
+  </div>
+  <div class="container">
+    <div class="viesti-laatikko" id="messages">
+      <div class="pistemaara">
+        <div class="pelaaja-pistemaara">
+          <div class="pelaaja-pistemaara-box">
+            <div class="pelaaja-pistemaara-nakyvilla"></div>
+          </div>
+        </div>
+        <div class="rundi">
+          <div class="rundi-nimi"></div>
+          <div class="rundi-nro">
+          </div>
+        </div>
+        <div class="jakaja-pistemaara">
+          <div class="jakaja-pistemaara-box">
+            <div class="jakaja-pistemaara-nakyvilla"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="poyta">
+      <div class="message">
+        Tervetuloa venttipeliin, tämä on koodattu DOM menetelmillä.
+      </div>
+      <div class="pelaaja">
+        <label class="pelaaja-nimi2">Jakajan/diilerin käsi:
+          <span id="jakaja-pisteet" class="pisteet"></span>
+        </label>
+        <div id="jakaja-kasi" class="kasi">
+        </div>
+      </div>
+      <div class="pelaaja">
+        <label class="pelaaja-nimi2">Sun käsi:
+          <span id="pelaaja-pisteet" class="pisteet"></span>
+        </label>
+        <div id="pelaaja-kasi" class="kasi">
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="aloita" type="button">Aloita</button>
+        <button id="nosta" type="button">Nosta kortti</button>
+        <button id="pida" type="button">Pidä kortit</button>
+        <button onclick="window.location.href=window.location.href">Tyhjennä</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="skriptit.js"></script>
+</body>
+
+</html>

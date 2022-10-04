@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventti</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="naviy">
+    <a href="/s2001051/ohjelmointi/#">Luka Raivisto (HP)</a>
+    <a href="/s2001051/ohjelmointi/teht">Tehtäviä</a>
+    <a href="/s2001051/ohjelmointi/luvut">Luvut-ohjelma</a>
+    <a href="/s2001051/ohjelmointi/robotto">Robotto-ohjelma</a>
+    <a href="/s2001051/ohjelmointi/ventti">Ventti-ohjelma</a>
+    <a href="/s2001051/ohjelmointi/ventti2">Ventti-ohjelma DOM remake</a>
+    <a href="dom">DOM-ohjelmointi</a>
+    <a href="#">Yhteystiedot</a>
+  </div>
+  <div id="bannehj">
+    <div class="ennencontainer">
+      <h1>Ventti</h1>
+      <p>
+        Pelaamaan vaan, olisko?
+      </p>
+    </div>
+    <div class="container">
+      <h1>Ventti-ohjelma</h1>
+      <p class="teksti">Jakajan käsi</p>
+      <section id="jakajan-käsi" class="hando">
+          <article id="j1" class="card"></article>
+          <article id="j2" class="card"></article>
+          <article id="j3" class="card"></article>
+          <article id="j4" class="card"></article>
+          <article id="j5" class="card"></article>
+      </section>
+  
+      <p class="teksti">Pelaajan käsi</p>
+      <section id="pelaajan-käsi" class="hando">
+          <article id="p1" class="card"></article>
+          <article id="p2" class="card"></article>
+          <article id="p3" class="card"></article>
+          <article id="p4" class="card"></article>
+          <article id="p5" class="card"></article>
+      </section>
+      <button onclick="nosta()" id="nappi">nosta kortti</button>
+      <button onclick="jakaja()" id="nappi2">pidä kortit</button>
+      <button onclick="window.location.href=window.location.href">tyhjennä</button>
+      <br>
+      <br>
+      <p class="teksti">Pistemääräsi:</p>
+      <p class="teksti" id="ilmoitus"></p>
+      <p class="teksti">Jakajan pistemäärä:</p>
+      <p class="teksti" id="ilmoitus2"></p>
+      <script src="skriptit.js"></script>
+    </div>
+  </div>
+</body>
+
+</html>

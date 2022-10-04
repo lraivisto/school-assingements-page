@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTS - Tehtävä 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="skriptit.js"></script>
+</head>
+
+<body>
+    <div class="naviy">
+        <a href="/s2001051/ohjelmointi/#">Luka Raivisto (HP)</a>
+        <a href="/s2001051/ohjelmointi/teht">Tehtäviä</a>
+        <a href="/s2001051/ohjelmointi/luvut">Luvut-ohjelma</a>
+        <a href="/s2001051/ohjelmointi/robotto">Robotto-ohjelma</a>
+        <a href="/s2001051/ohjelmointi/ventti">Ventti-ohjelma</a>
+        <a href="#">Yhteystiedot</a>
+    </div>
+    <div id="bannehj">
+        <div class="container">
+            <h1>Laske luvuilla ohjelma:</h1>
+            <p>
+                Joo tänne tulee ohjelma.
+            </p>
+            <label for="ots">Syötä kaksi numeroa (1-10):</label>
+            <br>
+            <input type="number" id="numero1" name="eka" min="1" max="10">
+            <br>
+            <input type="number" id="numero2" name="toka" min="1" max="10">
+            <br>
+            <button onclick="nappi()">Lähetä</button>
+            <button onClick="window.location.href=window.location.href">Tyhjennä sivu</button>
+            <p id="summa"></p>
+            <p id="erotus"></p>
+            <p id="kerto"></p>
+            <p id="jako"></p>
+            <p id="järj"></p>
+        </div>
+    </div>
+</body>
+
+</html>

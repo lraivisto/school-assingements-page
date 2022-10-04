@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTS - Tehtävä 12</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="skriptit.js"></script>
+</head>
+
+<body>
+    <div class="naviy">
+        <a href="/s2001051/ohjelmointi/#">Luka Raivisto (HP)</a>
+        <a href="/s2001051/ohjelmointi/teht">Tehtäviä</a>
+        <a href="/s2001051/ohjelmointi/luvut">Luvut-ohjelma</a>
+        <a href="/s2001051/ohjelmointi/robotto">Robotto-ohjelma</a>
+        <a href="/s2001051/ohjelmointi/ventti">Ventti-ohjelma</a>
+        <a href="#">Yhteystiedot</a>
+    </div>
+    <div id="bannehj">
+        <div class="container">
+            <h1>Tehtävä 12:</h1>
+            <p>Eka lomake:</p>
+            <form name="lomake1" action="loma1.php" method="post">
+                <label for="etnimi" required>Etunimi:</label><br>
+                <input type="text" id="fname" name="etnimi" value="" required><br>
+                <label for="sunimi" required>Sukunimi:</label><br>
+                <input type="text" id="lname" name="sunimi" value="" required><br>
+                <input type="submit" value="Lähetä">
+            </form>
+            <br>
+            <p>Toka lomake:</p>
+            <form name="lomake2" action="loma2.php" onsubmit="return tarkistaLomake()" method="post">
+                <label for="etnimi">Etunimi:</label><br>
+                <input type="text" id="etnimi" name="etnimi" value=""><br>
+                <label for="sunimi">Sukunimi:</label><br>
+                <input type="text" id="sunimi" name="sunimi" value=""><br>
+                <input type="submit" value="Lähetä">
+            </form>
+            <br>
+            <p>Kolmannes lomake:</p>
+            <form name="lomake3" action="loma1.php" method="post">
+                <label for="etnimi" required>Etunimi:</label><br>
+                <input type="text" id="fname" name="etnimi" value="" required><br>
+                <label for="sunimi" required>Sukunimi:</label><br>
+                <input type="text" id="lname" name="sunimi" value="" required><br>
+                <label for="ikä" required>Ikä:</label><br>
+                <input type="number" id="age" name="ikä" min="1" max="18"><br>
+                <input type="submit" value="Lähetä">
+            </form>
+        </div>
+</body>
+
+</html>
